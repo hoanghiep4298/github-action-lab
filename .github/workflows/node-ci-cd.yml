@@ -33,7 +33,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd app
+            cd app/github-action-lab
             git pull origin main
             npm ci
             npm run build
